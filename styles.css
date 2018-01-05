@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    color: rgb(154, 195, 251);
+    text-weight: bold;
+    font-size: 50px;
+    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-width: 2px;
+    font-family: "American Typewriter";
+    background-color: rgb(255, 232, 167);
+}
+
+#content {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: pink;
+}
+
+h2, h3 {
+    text-align: left;
+    color: rgb(154, 195, 251);
+    text-weight: bold;
+    font-size: 32px;
+    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-width: 1px;
+    font-family: "American Typewriter";
+}
+
+#thingsListed, #teachersListedinSection, #infoListed {
+    display: "none";
+}
+
+#addTeacherToSection, #addStudentToSection, #removeStudentFromSection, #newTeacher, #newStudent, #newSection, #hideAllAdds, #hideAllSecond {
+    background-color: rgb(255, 232, 167);
+    float: left;
+}
+
+#listItems, #hideItems, #listTeachersinSection {
+    background-color: rgb(154, 195, 251);
+    font-family: "American Typewriter";
+}
+
+#newStudentInterface, #newTeacherInterface, #newSectionInterface, #studentToSectionInterface, #teacherToSectionInterface, #removeStudentInterface {
+    position: relative;
+    margin: auto;
+    display: none;
+    text-align: center;
+    color: rgb(154, 195, 251);
+    -webkit-text-stroke-color: darkblue;
+    -webkit-text-stroke-width: 1px;
+    text-weight: bold;
+    font-size: 32px;
+    font-family: "American Typewriter";
+    background: rgb(255, 232, 167);
+    border: 1px black solid;
+}
+
+#studentFirstName, #studentLastName, #studentGrade, #studentIDNumber, #teacherFirstName, #teacherLastName, #teacherSubject, #sectionCourse, #sectionMaxSize{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0px;
+}
+
+#createStudent, #createTeacher, #createSection {
+    background-color: rgb(154, 195, 251);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0px;
+    font-family: "American Typewriter";
+}
+
+#thingsListed, #infoListed, #thingsListedTable, #sectionInfoListedTable, #teachersListedinSection, #teachersListedTable{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 35%;
+}
+#thingsListedTable, #sectionInfoListedTable, #teachersListedinSection {
+    border: 1px black solid;
+}
+
+#selectTeacher, #selectSection, #addTeacher, #listTeachersinSection, #sectionInfo {
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0px;
+    background-color: rgb(154, 195, 251);
+    font-family: "American Typewriter";
+}
+
+#teachersListed, #sectionsListed {
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0px;
+}
