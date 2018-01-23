@@ -1,29 +1,25 @@
+var id = 1;
 
-function Student(fName, lName, grade, id){
-    this.firstName = fName;
-    this.lastName = lName;
+
+function Student(fName, lName, grade){
+    this.id = id++;
+    this.fName = fName;
+    this.lName = lName;
     this.grade = grade;
-    this.id = id;
 }
 
 function Teacher(fName, lName, subject){
-    this.firstName = fName;
-    this.lastName = lName;
+    this.id = id++;
+    this.fName = fName;
+    this.lName = lName;
     this.subject = subject;
 }
 
-function Section(course, maxSize){
+function Section(course, maxSize, seatsLeft){
+    this.id = id++;
     this.course = course;
     this.maxSize = maxSize;
-    this.teachers = [];
-    //allSections.push(this);
-    // this.students = [];
-    // this.teacher = teacher;
-    this.addTeacher = function(teacher){
-        teachers.push(teacher);
-    };
-    // this.removeStudent = function(id){
-    //
-    // }
-    //sectionSeatsRemaining()
+    this.seatsLeft = seatsLeft;
+    this.students = [];
+    this.teacher;
 }

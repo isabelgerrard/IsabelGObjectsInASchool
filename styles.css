@@ -1,3 +1,4 @@
+/*Main Dont Change Stuff*/
 h1 {
     text-align: center;
     color: rgb(154, 195, 251);
@@ -8,19 +9,15 @@ h1 {
     font-family: "American Typewriter";
     background-color: rgb(255, 232, 167);
 }
-
 #content {
     position: relative;
     margin: auto;
     text-align: center;
 }
-
 body {
     background-color: pink;
 }
-
-h2, h3 {
-    text-align: left;
+h2, h3, h4 {
     color: rgb(154, 195, 251);
     text-weight: bold;
     font-size: 32px;
@@ -28,8 +25,16 @@ h2, h3 {
     -webkit-text-stroke-width: 1px;
     font-family: "American Typewriter";
 }
+h2, h3 {
+    text-align: left;
+}
+h4 {
+    text-align: center;
+}
 
-#thingsListed, #teachersListedinSection, #infoListed {
+
+
+#thingsListed, #sectionInfoListed, #studentInfo, #thingsListed2 #teachersListedinSection, #infoListed {
     display: "none";
 }
 
@@ -38,7 +43,7 @@ h2, h3 {
     float: left;
 }
 
-#listItems, #hideItems, #listTeachersinSection {
+#listItems, #searchStudent, #listSecStuff, #listItems2, #hideItems, #listTeachersinSection, #listTeachersButton, #listStudentsButton, #listSectionsButton3, #listSectionsButton4, #listStudentsButton2, #listSectionsButton, #listSectionsButton2 {
     background-color: rgb(154, 195, 251);
     font-family: "American Typewriter";
 }
@@ -76,24 +81,44 @@ h2, h3 {
     font-family: "American Typewriter";
 }
 
-#thingsListed, #infoListed, #thingsListedTable, #sectionInfoListedTable, #teachersListedinSection, #teachersListedTable{
+#thingsListed, #sectionInfoListed, #studentInfo, #thingsListed2, #infoListed, #thingsListedTable, #studentInfoListedTable, #secListedTable2, #studentInfoListed, #thingsListedTable2, #sectionInfoListedTable, #teachersListedinSection, #teachersListedTable{
     position: relative;
     margin: auto;
     text-align: center;
     width: 35%;
 }
-#thingsListedTable, #sectionInfoListedTable, #teachersListedinSection {
+#thingsListedTable, #studentInfoListedTable, #thingsListedTable2, #secListedTable2, #studentInfoListed, #sectionInfoListedTable, #teachersListedinSection {
     border: 1px black solid;
 }
 
-#selectTeacher, #selectSection, #addTeacher, #listTeachersinSection, #sectionInfo {
+#selectTeacher, #selectSection, #selectSection2, #addTeacher, #listTeachersinSection, #sectionInfo {
     -webkit-text-stroke-color: none;
     -webkit-text-stroke-width: 0px;
     background-color: rgb(154, 195, 251);
     font-family: "American Typewriter";
 }
 
-#teachersListed, #sectionsListed {
+/*DropDowns*/
+#teachersListed, #listSection, #listItems2, #thingsListed2, #thingsListedTable2, #secListedTable2, #studentInfoListed, #sectionInfoListed, #studentInfo, #sectionsListed, #studentslisted, #studentslisted2, #sectionsListed3, #sectionsListed4, #listTeachers, #sectionsListed2, #listTeachersButton, #listSectionsButton, #listStudentsButton, #listStudentsButton2, #listSectionsButton3, #listSectionsButton4 {
     -webkit-text-stroke-color: none;
     -webkit-text-stroke-width: 0px;
+}
+
+/*Buttons*/
+#addTheTeacherButton, #addTheStudentButton, #removeTheStudentButton, #searchStuInfoButton, #searchStudent {
+    background-color: rgb(154, 195, 251);
+    font-family: "American Typewriter";
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0px;
+}
+
+#searchStudent{
+    position: center;
+    margin: auto;
+    text-align: center;
+}
+
+#searchStudentInterface{
+    display: none;
+    text-align: center;
 }

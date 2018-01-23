@@ -10,32 +10,44 @@
 <body>
 <div id="content">
     <h1> ScHo0l 1s Co0l </h1>
-    <select id="list">
-        <option value="0" id="Students">Students</option>
-        <option value="1" id="Teachers">Teachers</option>
-        <option value="2" id="Sections">Sections</option>
-    </select>
 
-    <button id="listItems" onclick="listItems()">List</button>
-    <br><br>
+    <div id="objectInfo">
+        <h4> Object Information </h4>
+        <div id="Top/ Lists">
+            <select id="list">
+                <option value="0" id="Students">Students</option>
+                <option value="1" id="Teachers">Teachers</option>
+                <option value="2" id="Sections">Sections</option>
+            </select>
+            <button id="listItems" onclick="listItems()">List Object Info</button>
 
-    <div id="thingsListed">
+            <button id="listSectionsButton2" onclick="listSections2()">List Sections</button>
+            <div id="sectionsListed2"></div>
+            <button id="listSecStuff" onclick="listSecStudents()">List Students in Section</button>
+            <br><br>
+            <div id="sectionInfoListed">
+            </div>
+            <br><br>
+            <div id="thingsListed">
+            </div>
+            <br><br>
+            <button id="searchStudent" onclick="displaySearchStudent()">Search for a Student</button>
+            <br><br>
+            <div id="searchStudentInterface">
+                <input type=text id="stuFirstName" placeholder="First Name">
+                <input type=text id="stuLastName" placeholder="Last Name">
+                <br><br>
+                <button id="searchStuInfoButton" onclick="searchStu()">Search</button>
+                <br><br>
+                <div id="studentInfo"></div>
+                <br><br>
+            </div>
+            <button id="hideItems" onclick="hideItems()">Hide Lists and Clear Fields</button>
+        </div>
     </div>
 
-    <button id="selectSection" onclick="listSections()">Select Section</button>
-    <br><br>
-    <div id="sectionsListed">
-    </div>
-    <button id="sectionInfo" onclick="listSectionInfo()">List Section Information</button>
-    <br><br>
-    <div id="infoListed">
-    </div>
-
-    <button id="hideItems" onclick="hideItems()">Hide Lists</button>
-
-
-
-    <h3> 'Create New' Menu </h3>
+    <div id="Create New Menu">
+        <h3> 'Create New' Menu </h3>
     <button id="newTeacher" onclick="displayTeacherMenu()">Create New Teacher</button>
     <br><br>
     <div id="newTeacherInterface">Create New Teacher
@@ -66,7 +78,6 @@
         <input type=text id="studentFirstName" placeholder="First Name">
         <input type=text id="studentLastName" placeholder="Last Name">
         <input type=text id="studentGrade" placeholder="Grade">
-        <input type=text id="studentIDNumber" placeholder="ID Number">
         <br><br>
         <button id="createStudent" onclick="createNewStudent()">Create</button>
         <br><br>
@@ -86,72 +97,49 @@
     <br><br>
     <button id="hideAllAdds" onclick="hideAllAdds()">Hide All</button>
     <br><br>
+    </div>
 
-    <h2> Section Menu </h2>
+    <div id="Section Menu">
+        <h2> Section Menu </h2>
     <button id="addTeachertoSection" onclick="displayTeacherToSectionMenu()">Add a Teacher to a Section</button>
     <br><br>
     <div id="teacherToSectionInterface">Add a Teacher to a Section
         <br><br>
-        <button id="selectTeacher" onclick="listTeachers()">Select Teacher</button>
-        <button id="selectSection" onclick="listSections()">Select Section</button>
-        <br><br>
-        <div id="teachersListed">
-        </div>
-        <div id="sectionsListed">
-        </div>
-
-        <button id="addTeacher" onclick="addTeacherToSection()">Add</button>
-        <br><br>
+        <button id="listSectionsButton" onclick="listSections()">List Sections</button>
+        <div id="sectionsListed"></div>
+        <button id="listTeachersButton" onclick="listTeachers()">List Teachers</button>
+        <div id="teachersListed"></div>
+        <button id="addTheTeacherButton" onclick="addTeacherToSection()">Add</button>
     </div>
-    <br><br>
+        <br><br>
 
     <button id="addStudentToSection" onclick="displayStudentToSectionMenu()">Add a Student to a Section</button>
     <br><br>
     <div id="studentToSectionInterface">Add a Student to a Section
-        <!--<br><br>-->
-        <!--<select id="selectStudent">-->
-            <!--<option value="9">9th</option>-->
-            <!--<option value="10">10th</option>-->
-            <!--<option value="11">11th</option>-->
-            <!--<option value="12">12th</option>-->
-        <!--</select>-->
-        <!--<select id="selectSection">-->
-            <!--<option value="9">9th</option>-->
-            <!--<option value="10">10th</option>-->
-            <!--<option value="11">11th</option>-->
-            <!--<option value="12">12th</option>-->
-        <!--</select>-->
-        <!--<br><br>-->
-        <!--<button id="addStudent" onclick="createNewStudent()">Create</button>-->
-        <!--<br><br>-->
-    <!--</div>-->
-    <!--<br><br>-->
+        <br><br>
+        <button id="listSectionsButton3" onclick="listSections3()">List Sections</button>
+        <div id="sectionsListed3"></div>
+        <button id="listStudentsButton" onclick="listStudents()">List Students</button>
+        <div id="studentsListed"></div>
+        <button id="addTheStudentButton" onclick="addStudentToSection()">Add</button>
+    </div>
+        <br><br>
 
     <button id="removeStudentFromSection" onclick="displayRemoveStudentSectionMenu()">Remove a Student from a Section</button>
     <br><br>
     <div id="removeStudentInterface">Remove a Student from a Section
-        <!--<br><br>-->
-        <!--<select id="selectStudent">-->
-            <!--<option value="9">9th</option>-->
-            <!--<option value="10">10th</option>-->
-            <!--<option value="11">11th</option>-->
-            <!--<option value="12">12th</option>-->
-        <!--</select>-->
-        <!--<select id="selectSection">-->
-            <!--<option value="9">9th</option>-->
-            <!--<option value="10">10th</option>-->
-            <!--<option value="11">11th</option>-->
-            <!--<option value="12">12th</option>-->
-        <!--</select>-->
-        <!--<br><br>-->
-        <!--<button id="removeStudent" onclick="createNewStudent()">Create</button>-->
-        <!--<br><br>-->
-    </div>
-    <br><br>
-
+            <br><br>
+            <button id="listSectionsButton4" onclick="listSections4()">List Sections</button>
+            <div id="sectionsListed4"></div>
+            <button id="listStudentsButton2" onclick="listStudents2(sectionsListed4)">List Students</button>
+            <div id="studentsListed2"></div>
+            <button id="removeTheStudentButton" onclick="removeStudentFromSection()">Remove</button>
+        </div>
+        <br><br>
     <button id="hideAllSecond" onclick="hideAllSecond()">Hide All</button>
     <br><br>
+    </div>
 
-
+</div>
 </body>
 </html>
